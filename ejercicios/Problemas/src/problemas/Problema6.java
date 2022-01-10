@@ -10,5 +10,20 @@ package problemas;
  * @author reroes
  */
 public class Problema6 {
-    
+
+    public static void main(String[] args) {
+        int[] informacion = {1, 2, 3, 10, 20, 30, 100, 200, 300};
+        mediaarreglo(informacion);
+    }
+
+    public static double mediaarreglo(int[] arreglo) {
+        int suma = 0;
+        double media = 0;
+        for (int i = 0; i < arreglo.length; i++) {
+            suma = suma + arreglo[i];
+        }
+        media = suma / arreglo.length;
+        return media;
+    }
+ 
 }
